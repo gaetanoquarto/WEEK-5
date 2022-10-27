@@ -40,7 +40,6 @@ body {
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #1985A1;}
   
   /* classe per toggle di javascript */
   .mostra {display:block;}
@@ -67,4 +66,8 @@ body {
   .fatto {
     color: #C5C3C6;
     text-decoration: line-through;
+  }
+
+  .hover {
+    background-color: red;
   }

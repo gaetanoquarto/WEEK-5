@@ -1,6 +1,9 @@
 var dropDown = document.getElementById('myDropdown');
 var testo = document.getElementById('testo');
 let lista = document.querySelectorAll('li');
+let hoverMenu = document.querySelectorAll('a');
+let btn = document.getElementById('btn');
+
 
 function toggleBtn() {
     dropDown.classList.toggle("mostra");
@@ -32,6 +35,14 @@ function reset() {
     testo.style.textTransform = "";
 }
 
+for (var i = 0; i < hoverMenu.length; i++) {
+    hoverMenu[i].addEventListener('mouseover', function () {
+        this.classList.add('hover');
+    });
+    hoverMenu[i].addEventListener('mouseout', function () {
+        this.classList.remove('hover');
+});
+}
 
 for (var i = 0; i < lista.length; i++) {
     lista[i].addEventListener('mouseover', function () {
